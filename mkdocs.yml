@@ -1,4 +1,4 @@
-site_name: My MkDocs Material Documentation
+site_name: RPI Smart Mirror User Documentation
 site_url: https://sitename.example
 theme:
   name: material
