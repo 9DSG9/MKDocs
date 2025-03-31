@@ -40,20 +40,13 @@ Before proceeding, ensure you have the following installed:
 In these smart mirror setup instructions, I'll use the following conventions to help you navigate the documentation:
 
 1. Terminal commands will be displayed in code blocks:
-<<<<<<< HEAD
 
 		``` $ sudo apt install ```
 	 
-
-=======
-```
-$ sudo apt install
-```
->>>>>>> b78231b6fde1c8091ab69a170401c6c173ceb41b
+	 
 2. File paths and configuration files will be formatted: 
 	
 	config.js or /etc/MagicMirror/config
-	 
 
 
 3. User interface elements will be displayed in [square brackets]:
@@ -66,9 +59,9 @@ $ sudo apt install
 	1. **Open** the terminal
 	2. **Type** the command to update your system
 
+
 5. Important changes to existing files will be highlighted in yellow:
 
-<<<<<<< HEAD
 	```js title="Original.js"
 	function greet(name) {
 		const message = `Hello, ${name}!`;
@@ -84,13 +77,6 @@ $ sudo apt install
   		return message;
 	}
 	```
-=======
-	 ```
-	 
-	 #Original
-	 ```
->>>>>>> b78231b6fde1c8091ab69a170401c6c173ceb41b
-
 
 ## Notes and Warning Messages
 
