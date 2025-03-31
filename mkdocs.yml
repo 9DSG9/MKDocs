@@ -5,9 +5,14 @@ theme:
   font:
     text: Roboto
     code: Red Hat Mono
+<<<<<<< HEAD
   features:
     - content.code.copy
     - content.code.annotate
+=======
+  icon:
+    logo: fontawesome/solid/w
+>>>>>>> b78231b6fde1c8091ab69a170401c6c173ceb41b
   palette:
     # Dark Mode
     - scheme: slate
@@ -24,6 +29,7 @@ theme:
         name: Light mode
       primary: blue
       accent: deep orange
+<<<<<<< HEAD
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -39,4 +45,19 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       check_paths: true
+=======
+  # palette:
+  # scheme: slate
+  # primary: red
+  # accent: purple
+markdown_extensions:
+  - attr_list
+  - pydownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  
+>>>>>>> b78231b6fde1c8091ab69a170401c6c173ceb41b
 
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true

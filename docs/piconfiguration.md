@@ -1,8 +1,5 @@
-## Introduction
+## Overview
 
-This documentation will guide you through setting up your own smart mirror powered by a Raspberry Pi. A smart mirror combines a two-way mirror with a digital display, creating an interactive surface that shows personalized information while functioning as a regular mirror.
-
-This project aims to boost your productivity by turning a regular mirror into a morning information hub that displays calendar events, weather updates, news headlines, personal reminders, and other customizable widgets—all while you complete your morning routine.
 
 ## Who Should Use This Guide
 
@@ -38,58 +35,30 @@ Before proceeding, ensure you have the following installed:
 
 ## Typographical Conventions
 In these smart mirror setup instructions, I'll use the following conventions to help you navigate the documentation:
-
 1. Terminal commands will be displayed in code blocks:
-<<<<<<< HEAD
-
-		``` $ sudo apt install ```
-	 
-
-=======
 ```
 $ sudo apt install
 ```
->>>>>>> b78231b6fde1c8091ab69a170401c6c173ceb41b
 2. File paths and configuration files will be formatted: 
-	
-	config.js or /etc/MagicMirror/config
-	 
+config.js or /etc/MagicMirror/config
 
 
 3. User interface elements will be displayed in [square brackets]:
+[Settings] or [Display]
 
-	[Settings] or [Display]
-	
 
 4. Step-by-step instructions will be numbered and use bold for actions:
 
-	1. **Open** the terminal
-	2. **Type** the command to update your system
+
+Open the terminal
+Type the command to update your system
 
 5. Important changes to existing files will be highlighted in yellow:
 
-<<<<<<< HEAD
-	```js title="Original.js"
-	function greet(name) {
-		const message = `Hello, ${name}!`;
-		console.log(message);
-		return message;
-	}
-	```
-
-	```js title="Modified.js" 
-	function greet(name) {
-  		const message = `<!-- highlight-span -->Hello<!-- /highlight-span -->, ${name}!`;
-  		console.log(message);
-  		return message;
-	}
-	```
-=======
 	 ```
 	 
 	 #Original
 	 ```
->>>>>>> b78231b6fde1c8091ab69a170401c6c173ceb41b
 
 
 ## Notes and Warning Messages
