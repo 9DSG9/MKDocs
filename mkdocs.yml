@@ -5,6 +5,9 @@ theme:
   font:
     text: Roboto
     code: Red Hat Mono
+  features:
+    - content.code.copy
+    - content.code.annotate
   palette:
     # Dark Mode
     - scheme: slate
@@ -21,8 +24,19 @@ theme:
         name: Light mode
       primary: blue
       accent: deep orange
-  # palette:
-    # scheme: slate
-    # primary: red
-    # accent: purple
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      check_paths: true
 
