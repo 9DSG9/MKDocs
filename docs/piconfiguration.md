@@ -1,8 +1,5 @@
-## Introduction
+## Overview
 
-This documentation will guide you through setting up your own smart mirror powered by a Raspberry Pi. A smart mirror combines a two-way mirror with a digital display, creating an interactive surface that shows personalized information while functioning as a regular mirror.
-
-This project aims to boost your productivity by turning a regular mirror into a morning information hub that displays calendar events, weather updates, news headlines, personal reminders, and other customizable widgets—all while you complete your morning routine.
 
 ## Who Should Use This Guide
 

@@ -5,6 +5,8 @@ theme:
   font:
     text: Roboto
     code: Red Hat Mono
+  icon:
+    logo: fontawesome/solid/w
   palette:
     # Dark Mode
     - scheme: slate
@@ -22,7 +24,16 @@ theme:
       primary: blue
       accent: deep orange
   # palette:
-    # scheme: slate
-    # primary: red
-    # accent: purple
+  # scheme: slate
+  # primary: red
+  # accent: purple
+markdown_extensions:
+  - attr_list
+  - pydownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  
 
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
