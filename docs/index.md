@@ -42,23 +42,23 @@ In these smart mirror setup instructions, I'll use the following conventions to 
 1. Terminal commands will be displayed in code blocks:
 
 		``` $ sudo apt install ```
-	 
+<br>
 	 
 2. File paths and configuration files will be formatted: 
 	
 	config.js or /etc/MagicMirror/config
-
+<br><br>
 
 3. User interface elements will be displayed in [square brackets]:
 
 	[Settings] or [Display]
-	
+<br><br>	
 
 4. Step-by-step instructions will be numbered and use bold for actions:
 
 	1. **Open** the terminal
 	2. **Type** the command to update your system
-
+<br><br>
 
 5. Important changes to existing files will be highlighted in yellow:
 
@@ -72,11 +72,12 @@ In these smart mirror setup instructions, I'll use the following conventions to 
 
 	```js title="Modified.js" 
 	function greet(name) {
-  		const message = `<!-- highlight-span -->Hello<!-- /highlight-span -->, ${name}!`;
+  		const message = 'Hello' + ', ${name}!';
   		console.log(message);
   		return message;
 	}
 	```
+<br>
 
 ## Notes and Warning Messages
 
