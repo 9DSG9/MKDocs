@@ -42,11 +42,11 @@ In these smart mirror setup instructions, I'll use the following conventions to 
 1. Terminal commands will be displayed in code blocks:
 
 		``` $ sudo apt install ```
-<br>
+
 	 
 2. File paths and configuration files will be formatted: 
 	
-	config.js or /etc/MagicMirror/config
+	`config.js` or `/etc/MagicMirror/config`
 <br><br>
 
 3. User interface elements will be displayed in [square brackets]:
@@ -60,7 +60,7 @@ In these smart mirror setup instructions, I'll use the following conventions to 
 	2. **Type** the command to update your system
 <br><br>
 
-5. Important changes to existing files will be highlighted in yellow:
+5. Important changes to existing files will be highlighted:
 
 	```js title="Original.js"
 	function greet(name) {
@@ -70,14 +70,26 @@ In these smart mirror setup instructions, I'll use the following conventions to 
 	}
 	```
 
-	```js title="Modified.js" 
+	```js title="Modified.js" hl_lines="2"
 	function greet(name) {
-  		const message = 'Hello' + ', ${name}!';
+  		const message = `Goodbye, ${name}!`; // (1)
   		console.log(message);
   		return message;
 	}
 	```
-<br>
+
+	1.  Changed greeting from "Hello" to "Goodbye"
 
 ## Notes and Warning Messages
 
+!!! note
+    This documentation covers only the software setup aspects of the smart mirror. Hardware assembly instructions are not included.
+
+!!! warning
+    Ensure your Raspberry Pi has a stable power supply of at least 2.5A. Insufficient power can cause system instability and damage your SD card.
+
+!!! info
+    While this guide is designed for CS students, it assumes basic familiarity with Linux commands and package management.
+
+!!! success
+    By following these instructions, you'll have a fully functional smart mirror displaying customized information while maintaining mirror functionality.
