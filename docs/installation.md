@@ -40,7 +40,7 @@ MagicMirror² requires several dependencies to function properly:
 
 3. **Install(*WIP*)** Install Node.js v20 
    ```
-   nvm install 20
+   nvm install --lts
    ```
 
 4. **Verify** the installation:
