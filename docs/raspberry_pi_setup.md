@@ -17,7 +17,7 @@ This section guides you through installing and configuring Raspberry Pi OS on yo
 !!! note
     Raspberry Pi Imager is the official tool for installing Raspberry Pi OS and is regularly updated with the latest versions.
 
-![Raspberry Pi Imager download page](.\images\pi-imager-download.gif)
+![Raspberry Pi Imager download page](./images/pi-imager-download.gif)
 
 ### Flash Raspberry Pi OS to the SD Card
 
