@@ -1,5 +1,8 @@
 # Installation Guide
 
+!!! danger "Loss of Progress"
+      An interrupt of power could cause the corruption of your SD card resulting a loss of progress. 
+
 ## Overview
 
 This section guides you through installing the MagicMirror² software on your Raspberry Pi. MagicMirror² is an open-source platform that transforms your mirror into a customizable display with various modules for different types of information.
