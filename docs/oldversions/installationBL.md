@@ -25,25 +25,13 @@ Before installing any new software, ensure your system is up to date:
 
 MagicMirror² requires several dependencies to function properly:
 
-1. **Install(*WIP*)** Node Version Manager: (NVM)
+1. **Install** Node.js and npm:
    ```
-   sudo apt install -y curl build-essential libssl-dev
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-   ```
-
-2. **Reload(*WIP*)** Reload your profile to start using Node Version Manager: (NVM)
-   ```
-   export NVM_DIR="$HOME/.nvm"
-   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+   curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+   sudo apt install -y nodejs
    ```
 
-3. **Install(*WIP*)** Install Node.js v20 
-   ```
-   nvm install 20
-   ```
-
-4. **Verify** the installation:
+2. **Verify** the installation:
    ```
    node -v
    npm -v
