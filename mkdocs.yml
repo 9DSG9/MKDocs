@@ -1,5 +1,13 @@
 site_name: RPI Smart Mirror User Documentation
 site_url: https://sitename.example
+nav:
+  - Home: index.md
+  - Installation Guide: installation.md
+  - Configuration Guide: configuration.md
+  - Customization Guide: customization.md
+  - Troubleshooting Guide: troubleshooting.md
+  - Glossary: glossary.md
+  
 theme:
   name: material
   font:
