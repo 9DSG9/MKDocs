@@ -8,6 +8,10 @@ This project aims to boost your productivity by turning a regular mirror into a 
 
 This guide is designed specifically for first and second-term Computer Science students who possess working knowledge of:
 
+* Terminal-based command execution and navigation
+* Software installation via package managers (apt)
+* Fundamental Linux/Raspberry Pi OS operations and file systems
+
 ## Prerequisites
 
 To follow these instructions, you will need:
