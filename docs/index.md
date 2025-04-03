@@ -16,7 +16,7 @@ This guide is designed specifically for first and second-term Computer Science s
 
 To follow these instructions, you will need:
 
-* A computer with macOS, Windows, or Linux operating system
+* A computer with internet access (Windows, macOS, or Linux)
 * A myBCIT email account
 * Basic knowledge of mouse, keyboard, and trackpad terminologies
 

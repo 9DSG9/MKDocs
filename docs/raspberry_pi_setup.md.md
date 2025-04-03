@@ -4,16 +4,6 @@
 
 This section guides you through installing and configuring Raspberry Pi OS on your SD card, which serves as the foundation for your smart mirror software. Raspberry Pi OS (formerly called Raspbian) is the official operating system for Raspberry Pi devices and provides the Linux environment needed to run the MagicMirror² software.
 
-## Prerequisites
-
-Before beginning this installation, ensure you have:
-
-* A computer with internet access (Windows, macOS, or Linux)
-* A microSD card (minimum 8GB, class 10 recommended)
-* SD card adapter or reader compatible with your computer
-* A Raspberry Pi (3B+ or newer recommended)
-* Access to a display, keyboard, and mouse for initial setup
-
 ## Preparing the SD Card
 
 ### Download and Install Raspberry Pi Imager
@@ -60,7 +50,7 @@ Before beginning this installation, ensure you have:
    * **Select** your country from the dropdown menu
    * **Check** "Set locale settings" and select your time zone and keyboard layout
 
-![Advanced options configuration](.\images\pi-imager-advanced.gif)
+![Advanced options configuration](raspberry_pi_setup.md.md\images\pi-imager-advanced.gif)
 
 8. **Click** [SAVE] to save your advanced options
 
