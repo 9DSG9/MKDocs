@@ -22,6 +22,8 @@
 
 **Node.js**: A JavaScript runtime environment that executes JavaScript code outside a web browser.
 
+**NVM (Node Version Manager)** A version manager to download versions of node.js easily
+
 **npm (Node Package Manager)**: A package manager for JavaScript, used to install Node.js packages.
 
 **Raspberry Pi**: A series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation.
