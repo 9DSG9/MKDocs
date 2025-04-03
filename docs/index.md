@@ -97,3 +97,6 @@ In these smart mirror setup instructions, I'll use the following conventions to 
 
 !!! success
     By following these instructions, you'll have a fully functional smart mirror displaying customized information while maintaining mirror functionality.
+
+!!! danger
+	Unplugging your Raspberry Pi during installation may cause irreparable damage. Do not unplug your device.
