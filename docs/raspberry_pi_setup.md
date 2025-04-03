@@ -37,7 +37,7 @@ This section guides you through installing and configuring Raspberry Pi OS on yo
 !!! warning "Data Loss Risk"
        All data on the selected SD card will be erased during this process. Make sure you have selected the correct storage device.
 
-![Selecting OS and storage in Pi Imager](..\images\pi-imager-selection.gif)
+![Selecting OS and storage in Pi Imager](./images/pi-imager-selection.gif)
 
 6. **Click** the gear icon (⚙️) to access advanced options
 
@@ -50,7 +50,7 @@ This section guides you through installing and configuring Raspberry Pi OS on yo
    * **Select** your country from the dropdown menu
    * **Check** "Set locale settings" and select your time zone and keyboard layout
 
-![Advanced options configuration](..\images\pi-imager-advanced.gif)
+![Advanced options configuration](./images/pi-imager-advanced.gif)
 
 8. **Click** [SAVE] to save your advanced options
 
@@ -62,13 +62,13 @@ This section guides you through installing and configuring Raspberry Pi OS on yo
 
 12. **Click** [CONTINUE] when prompted that the write was successful
 
-![Preparing to write progress in Pi Imager](..\images\Preparing_To_Write.jpg)
+![Preparing to write progress in Pi Imager](./images/Preparing_To_Write.jpg)
 
-![Writing progress in Pi Imager](..\images\pi-imager-writing.jpg)
+![Writing progress in Pi Imager](./images/pi-imager-writing.jpg)
 
-![Verifying progress in Pi Imager](..\images\pi-imager-verifying.jpg)
+![Verifying progress in Pi Imager](./images/pi-imager-verifying.jpg)
 
-![Write successful in Pi Imager](..\images\pi-imager-write-successful.jpg)
+![Write successful in Pi Imager](../images/pi-imager-write-successful.jpg)
 
 13. **Remove** the SD card from your computer
 
