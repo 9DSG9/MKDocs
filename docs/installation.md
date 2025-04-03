@@ -18,6 +18,8 @@ Before installing any new software, ensure your system is up to date:
    ```
 3. **Wait** for the process to complete (may take several minutes)
 
+<!-- Image showing the updates and shiii -->
+
 !!! note "System Updates"
     Keeping your system updated ensures compatibility with the latest software and improves security.
 
@@ -49,6 +51,8 @@ MagicMirror² requires several dependencies to function properly:
    npm -v
    ```
 
+   <!-- Image here showing the versions and a note that a version may need to be specifed etc show cmd for versinos  -->
+
 3. **Install** other required packages:
    ```
    sudo apt install -y git python3-pip
@@ -67,6 +71,8 @@ MagicMirror² requires several dependencies to function properly:
    ```
    git clone https://github.com/MichMich/MagicMirror.git
    ```
+
+   <!-- Image for the clone output twin -->
      
 3. **Navigate** to the MagicMirror directory:
    ```
@@ -79,6 +85,8 @@ MagicMirror² requires several dependencies to function properly:
    ```
    npm install
    ```
+
+      <!-- Image for the output twin -->
 
 !!! warning "Installation Time"
     This process may take 10-15 minutes on a Raspberry Pi. Be patient and don't interrupt the process.
@@ -94,6 +102,8 @@ MagicMirror² requires several dependencies to function properly:
    ```
 
 If successful, you should see the MagicMirror interface appear on screen.
+
+   <!-- Image of the default magic mirror interface twin -->
 
 4. **Press** `Ctrl+Q` to exit the application
 
@@ -114,6 +124,8 @@ To make your smart mirror start automatically when the Raspberry Pi boots:
    Exec=bash -c "cd ~/MagicMirror && npm start"
    X-GNOME-Autostart-enabled=true
    ```
+
+      <!-- Nano editor showing the magicmirror.desktop file being created -->
 
 3. **Save** the file by pressing `Ctrl+O`, then `Enter`
 

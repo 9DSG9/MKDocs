@@ -25,7 +25,7 @@ To follow these instructions, you will need:
 Before beginning this installation, you'll need:
 
 * A Raspberry Pi (3B+ or newer recommended)
-* SD card with Raspberry Pi OS installed
+* An SD card
 * Monitor or TV with HDMI input (for initial setup)
 * USB keyboard and mouse (for initial setup)
 * Internet connection (Wi-Fi or Ethernet)
