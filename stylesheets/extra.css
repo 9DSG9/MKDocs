@@ -1,0 +1,65 @@
+/* Custom styles for the Smart Mirror documentation */
+
+/* Main heading colors */
+h1 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  color: #3498db;
+}
+
+h3 {
+  color: #2980b9;
+}
+
+/* Code blocks styling */
+.md-typeset code {
+  background-color: #f7f7f7;
+  color: #e74c3c;
+}
+
+/* Admonition block customization */
+.md-typeset .admonition {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+}
+
+.md-typeset .note {
+  border-left: 4px solid #3498db;
+}
+
+.md-typeset .warning {
+  border-left: 4px solid #f39c12;
+}
+
+/* Table styling */
+.md-typeset table:not([class]) {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Improve code block readability */
+.md-typeset pre>code {
+  line-height: 1.6;
+}
+
+/* Additional spacing for readability */
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol {
+  margin: 1em 0;
+}
+
+/* Make commands stand out */
+.md-typeset .command {
+  background-color: #2c3e50;
+  color: white;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
