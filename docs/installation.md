@@ -15,32 +15,31 @@ Before installing any new software, ensure your system is up to date:
    ```
    sudo apt update
    sudo apt upgrade -y
+
    ```
 3. **Wait** for the process to complete (may take several minutes)
 
-<!-- Image showing the updates and shiii -->
-
-!!! note "System Updates"
-    Keeping your system updated ensures compatibility with the latest software and improves security.
+    !!! note "System Updates"
+         Keeping your system updated ensures compatibility with the latest software and improves security.
 
 ### Install Required Dependencies
 
 MagicMirror² requires several dependencies to function properly:
 
-1. **Install(*WIP*)** Node Version Manager: (NVM)
+1. **Install** Node Version Manager through the terminal window: (NVM)
    ```
    sudo apt install -y curl build-essential libssl-dev
    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
    ```
 
-2. **Reload(*WIP*)** Reload your profile to start using Node Version Manager: (NVM)
+2. **Reload** Reload your profile to start using Node Version Manager: (NVM)
    ```
    export NVM_DIR="$HOME/.nvm"
    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
    ```
 
-3. **Install(*WIP*)** Install Node.js v20 
+3. **Install** Install Node.js v20 
    ```
    nvm install node
    ```
@@ -51,9 +50,13 @@ MagicMirror² requires several dependencies to function properly:
    npm -v
    ```
 
-   <!-- Image here showing the versions and a note that a version may need to be specifed etc show cmd for versinos  -->
+    ![Raspberry Pi Versions](./images/nodeversions.png)
 
-3. **Install** other required packages:
+    !!! note "Version Specification"
+         Version may need to be specified.
+
+
+5. **Install** other required packages:
    ```
    sudo apt install -y git python3-pip
    ```
@@ -66,14 +69,13 @@ MagicMirror² requires several dependencies to function properly:
    ```
    cd ~
    ```
-     
+   
 2. **Clone** the MagicMirror repository:
    ```
    git clone https://github.com/MichMich/MagicMirror.git
    ```
+   ![Raspberry Pi Clone Output](./images/clonemm.png)
 
-   <!-- Image for the clone output twin -->
-     
 3. **Navigate** to the MagicMirror directory:
    ```
    cd MagicMirror
@@ -86,10 +88,10 @@ MagicMirror² requires several dependencies to function properly:
    npm install
    ```
 
-      <!-- Image for the output twin -->
+    ![Raspberry Pi Install Ouput](./images/npminstalloutput.png)
 
-!!! warning "Installation Time"
-    This process may take 10-15 minutes on a Raspberry Pi. Be patient and don't interrupt the process.
+    !!! warning "Installation Time"
+         This process may take 10-15 minutes on a Raspberry Pi. Be patient and don't interrupt the process.
 
 2. **Copy** the sample configuration:
    ```
@@ -100,48 +102,14 @@ MagicMirror² requires several dependencies to function properly:
    ```
    npm start
    ```
-
 If successful, you should see the MagicMirror interface appear on screen.
+    * **Press** `Ctrl+Q` to exit the application
 
-   <!-- Image of the default magic mirror interface twin -->
+   ![Raspberry Pi Magic Mirror Display](./images/MAGICMIRROR.png)
 
-4. **Press** `Ctrl+Q` to exit the application
-
-## Setting Up Autostart
-
-To make your smart mirror start automatically when the Raspberry Pi boots:
-
-1. **Create** a new autostart script:
-   ```
-   sudo nano /etc/xdg/autostart/magicmirror.desktop
-   ```
-
-2. **Add** the following content:
-   ```
-   [Desktop Entry]
-   Type=Application
-   Name=MagicMirror
-   Exec=bash -c "cd ~/MagicMirror && npm start"
-   X-GNOME-Autostart-enabled=true
-   ```
-
-      <!-- Nano editor showing the magicmirror.desktop file being created -->
-
-3. **Save** the file by pressing `Ctrl+O`, then `Enter`
-
-4. **Exit** the editor by pressing `Ctrl+X`
-
-5. **Make** the file executable:
-   ```
-   sudo chmod +x /etc/xdg/autostart/magicmirror.desktop
-   ```
-     
-6. **Restart** your Raspberry Pi to test the autostart configuration:
-   ```
-   sudo reboot
-   ```
+!!! success "Completion of installing MagicMirror²"
+      You've done it! Congratulations!
 
 ## Conclusion
 
 You have now successfully installed MagicMirror² on your Raspberry Pi and configured it to start automatically at boot. In the next section, we'll configure the basic modules and customize the display layout.
-
