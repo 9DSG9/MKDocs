@@ -7,6 +7,7 @@ nav:
   - Configuration Guide: configuration.md
   - Customization Guide: customization.md
   - Troubleshooting Guide: troubleshooting.md
+  - TROUBLESHOOTTEST: troubleshootingDG.md
   - Glossary: glossary.md
 
 theme:
@@ -41,6 +42,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
+  - def_list
   - pymdownx.highlight:
       anchor_linenums: true
       use_pygments: true
