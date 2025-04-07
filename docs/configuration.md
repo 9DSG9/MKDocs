@@ -14,7 +14,6 @@ MagicMirror² comes with several default modules. We'll configure the most usefu
    ```
    nano ~/MagicMirror/config/config.js
    ```
-
    <!--  File explorer or terminal showing navigation to the config file -->
      
 2. **Locate** the weather module configuration section
@@ -33,18 +32,16 @@ MagicMirror² comes with several default modules. We'll configure the most usefu
       }
    },
    ```
-
     <!--  Code editor showing weather module configuration with highlighted sections -->
 
 4. **Get** an API key by:
-   * Going to [OpenWeatherMap](https://openweathermap.org/)
-   * Creating a free account
-   * Generating an API key from your account dashboard
-
+      * Going to [OpenWeatherMap](https://openweathermap.org/)
+      * Creating a free account
+      * Generating an API key from your account dashboard
    <!--  Screenshot of OpenWeatherMap website showing where to get an API key and using BCIT email for stu accesses  -->
 
-!!! warning "API Key Security"
-    Never share your API keys publicly. They should be kept private and secure.
+    !!! warning "API Key Security"
+        Never share your API keys publicly. They should be kept private and secure.
 
 ### Calendar Module
 
@@ -66,13 +63,12 @@ MagicMirror² comes with several default modules. We'll configure the most usefu
       }
    },
    ```
-
      <!--  Code editor showing calendar module configuration with highlighted sections -->
 
 3. **Replace** `YOUR_ICAL_URL` with your Google Calendar, Outlook, or other iCal URL
 
-!!! warning "Calendar Visibility"
-    Calendar must be made public/viewable to be used or may cause issues   
+    !!! warning "Calendar Visibility"
+        Calendar must be made public/viewable to be used or may cause issues   
 
 ### News Feed Module
 
@@ -101,7 +97,6 @@ MagicMirror² comes with several default modules. We'll configure the most usefu
       }
    }
    ```
-
    <!--  Code editor showing newsfeed module configuration with highlighted sections -->
 
 3. **Save** the file by pressing `Ctrl+O`, then `Enter`
