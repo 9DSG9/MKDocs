@@ -14,10 +14,10 @@ This section guides you through installing and configuring Raspberry Pi OS on yo
    
 3. **Install** the downloaded software by following the installation prompts
 
-!!! note
-    Raspberry Pi Imager is the official tool for installing Raspberry Pi OS and is regularly updated with the latest versions.
+    !!! note
+        Raspberry Pi Imager is the official tool for installing Raspberry Pi OS and is regularly updated with the latest versions.
 
-![Raspberry Pi Imager download page](./images/pi-imager-download.gif)
+    ![Raspberry Pi Imager download page](./images/pi-imager-download.gif)
 
 ### Flash Raspberry Pi OS to the SD Card
 
@@ -29,28 +29,29 @@ This section guides you through installing and configuring Raspberry Pi OS on yo
    
 4. **Click** [CHOOSE OS] and select "Raspberry Pi OS (64-bit)" from the list of operating systems
    
-!!! note
-       Using the 64-bit version is recommended for Raspberry Pi 3 or newer, as it allows better performance for the smart mirror software.
+    !!! note
+        Using the 64-bit version is recommended for Raspberry Pi 3 or newer, as it allows better performance for the smart mirror software.
 
 5. **Click** [CHOOSE STORAGE] and select your SD card from the list
 
-!!! warning "Data Loss Risk"
-       All data on the selected SD card will be erased during this process. Make sure you have selected the correct storage device.
+    !!! warning "Data Loss Risk"
+        All data on the selected SD card will be erased during this process. Make sure you have selected the correct storage device.
 
-![Selecting OS and storage in Pi Imager](./images/pi-imager-selection.gif)
+     ![Selecting OS and storage in Pi Imager](./images/pi-imager-selection.gif){: markdown="1" }
 
-6. **Click** the gear icon (⚙️) to access advanced options
+!!! note "Customization Settings"
+      If you don’t configure your Raspberry Pi via OS customization settings, Raspberry Pi OS will ask you for the same information at first boot during the configuration wizard. You can click the No button to skip OS customisation
 
 7. **Configure** the following settings:
-   * **Check** "Set hostname" and enter a name (e.g., "smartmirror")
-   * **Check** "Enable SSH" and select "Use password authentication"
-   * **Check** "Set username and password" and create a username and secure password
-   * **Check** "Configure wireless LAN" if you plan to use Wi-Fi
-   * **Enter** your Wi-Fi network name (SSID) and password
-   * **Select** your country from the dropdown menu
-   * **Check** "Set locale settings" and select your time zone and keyboard layout
+    * **Check** "Set hostname" and enter a name (e.g., "smartmirror")
+    * **Check** "Enable SSH" and select "Use password authentication"
+    * **Check** "Set username and password" and create a username and secure password
+    * **Check** "Configure wireless LAN" if you plan to use Wi-Fi
+    * **Enter** your Wi-Fi network name (SSID) and password
+    * **Select** your country from the dropdown menu
+    * **Check** "Set locale settings" and select your time zone and keyboard layout
 
-![Advanced options configuration](./images/pi-imager-advanced.gif)
+     ![Advanced options configuration](./images/pi-imager-advanced.gif)
 
 8. **Click** [SAVE] to save your advanced options
 
@@ -62,18 +63,18 @@ This section guides you through installing and configuring Raspberry Pi OS on yo
 
 12. **Click** [CONTINUE] when prompted that the write was successful
 
-![Preparing to write progress in Pi Imager](./images/Preparing_To_Write.jpg)
+      ![Preparing to write progress in Pi Imager](./images/Preparing_To_Write.jpg)
 
-![Writing progress in Pi Imager](./images/pi-imager-writing.jpg)
+      ![Writing progress in Pi Imager](./images/pi-imager-writing.jpg)
 
-![Verifying progress in Pi Imager](./images/pi-imager-verifying.jpg)
+      ![Verifying progress in Pi Imager](./images/pi-imager-verifying.jpg)
 
-![Write successful in Pi Imager](../images/pi-imager-write-successful.jpg)
+      ![Write successful in Pi Imager](../images/pi-imager-write-successful.jpg)
 
 13. **Remove** the SD card from your computer
 
-!!! success
-      The Raspberry Pi software has been successfully written to the SD card, and we can now move forward!
+    !!! success
+        The Raspberry Pi software has been successfully written to the SD card, and we can now move forward!
 
 ## Initial Boot and Configuration
 
@@ -82,16 +83,16 @@ This section guides you through installing and configuring Raspberry Pi OS on yo
 1. **Insert** the prepared microSD card into your Raspberry Pi
 
 2. **Connect** the following to your Raspberry Pi:
-   * Display (via HDMI)
-   * Keyboard and mouse (via USB)
-   * Power supply
+    * Display (via HDMI)
+    * Keyboard and mouse (via USB)
+    * Power supply
 
 3. **Power on** your Raspberry Pi by connecting the power supply
 
-!!! note
-       If you configured SSH and Wi-Fi in the previous steps, you can technically skip the physical keyboard, mouse, and display connections and access your Raspberry Pi remotely. However, for initial setup, a direct connection is recommended.
+    !!! note
+         If you configured SSH and Wi-Fi in the previous steps, you can technically skip the physical keyboard, mouse, and display connections and access your Raspberry Pi remotely. However, for initial setup, a direct connection is recommended.
 
-<!-- IMAGE 5: Photo or diagram showing the connected Raspberry Pi with all peripherals -->
+    ![Raspberry Pi Peripherals](./images/peripherals.png)
 
 ### First Boot Setup
 
@@ -111,7 +112,7 @@ The Raspberry Pi will automatically boot and perform initial setup based on the 
 
 5. **Wait** for the update process to complete (this may take 10-15 minutes depending on your internet speed)
 
-<!-- IMAGE 6: Screenshot showing the terminal with update commands running -->
+    ![Raspberry Pi Sudo Apt Update](./images/sudo-apt-update.png)
 
 ## Optimizing Your Raspberry Pi for Smart Mirror Use
 
@@ -125,7 +126,7 @@ The Raspberry Pi will automatically boot and perform initial setup based on the 
 
 4. **Click** [OK] to save changes
 
-<!-- IMAGE 7: Screenshot of Raspberry Pi Configuration tool with Display tab open -->
+    ![Raspberry Pi Config Display](./images/Displayblanking-.gif)
 
 ### Configure Boot Options
 
@@ -135,6 +136,8 @@ The Raspberry Pi will automatically boot and perform initial setup based on the 
    ```
    sudo raspi-config
    ```
+
+    ![Raspberry Pi Boot Configuration](./images/bootconfigmenu.png)
 
 3. **Select** "System Options" using arrow keys and press Enter
 
@@ -146,7 +149,7 @@ The Raspberry Pi will automatically boot and perform initial setup based on the 
 
 7. **Reboot** when prompted
 
-<!-- IMAGE 8: Screenshot showing raspi-config interface with boot options highlighted -->
+    ![Raspberry Pi Reboot](./images/rebootyes.png)
 
 ### Configure Power Management
 
@@ -158,6 +161,9 @@ To optimize performance for the smart mirror:
    ```
    sudo nano /boot/config.txt
    ```
+
+    !!! note "Pi5 command"
+         You may need to use /boot/firmware/config.txt as the path if using a Raspberry Pi 5.
 
 3. **Add** the following lines at the end of the file to allocate more memory to the GPU for better display performance:
    ```
@@ -174,7 +180,7 @@ To optimize performance for the smart mirror:
    sudo reboot
    ```
 
-<!-- IMAGE 9: Screenshot showing the config.txt file being edited in nano -->
+    ![Raspberry Pi config.txt Edit](./images/addlinestoconfigtxt.png)
 
 ## Enable Remote Access (Optional)
 
@@ -197,7 +203,7 @@ If you didn't enable SSH during the initial setup with Raspberry Pi Imager, you 
 
 7. **Reboot** when prompted
 
-<!-- IMAGE 10: Screenshot showing SSH option being enabled in raspi-config -->
+    ![Raspberry Pi SSH Configuration](./images/SSHenable.gif)
 
 ## Finding Your Raspberry Pi's IP Address
 
@@ -212,7 +218,8 @@ To connect to your Raspberry Pi remotely or for the next steps in the smart mirr
 
 3. **Note** the IP address displayed (e.g., 192.168.1.100)
 
-<!-- IMAGE 11: Screenshot showing the Terminal with hostname -I command and resulting IP address -->
+    ![Raspberry Pi IP Address](./images/IPAddress.png)
+
 ## Conclusion
 
 You have now successfully:
@@ -225,3 +232,12 @@ You have now successfully:
 - Located your Raspberry Pi's IP address for future reference
 
 Your Raspberry Pi is now prepared for the next step: installing the required packages for your smart mirror. In the next section, we'll guide you through installing Node.js, Git, and other dependencies needed for the MagicMirror² software.
+
+![Raspberry Pi Initial Screen](./images/piinitalscreen.png)
+![Raspberry Pi User Setup](./images/usersetup.png)
+![Raspberry Pi Update Check](./images/startupdate.png)
+![Raspberry Pi Wifi Select](./images/wifistart.png)
+![Raspberry Pi Wifi Password](./images/wifestartpassword.png)
+![Raspberry Pi Country](./images/location.png)
+![Raspberry Pi Download Updates](./images/downloadstartprogress.png)
+![Raspberry Pi Setup Complete](./images/startend.png)
