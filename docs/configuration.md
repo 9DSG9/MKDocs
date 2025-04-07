@@ -35,10 +35,11 @@ MagicMirror² comes with several default modules. We'll configure the most usefu
     <!--  Code editor showing weather module configuration with highlighted sections -->
 
 4. **Get** an API key by:
-      * Going to [OpenWeatherMap](https://openweathermap.org/)
-      * Creating a free account
-      * Generating an API key from your account dashboard
-   <!--  Screenshot of OpenWeatherMap website showing where to get an API key and using BCIT email for stu accesses  -->
+   * Going to [OpenWeatherMap](https://openweathermap.org/)
+   * Creating a free account
+   * Generating an API key from your account dashboard
+
+![OpenWeatherApp Key Acquisition](./images/OpenWeatherMap_API.png)
 
     !!! warning "API Key Security"
         Never share your API keys publicly. They should be kept private and secure.
@@ -103,7 +104,10 @@ MagicMirror² comes with several default modules. We'll configure the most usefu
 
 4. **Exit** the editor by pressing `Ctrl+X`
 
-## Setting Up Touch Interface
+!!! note "BONUS Configurations"
+      The additional configurations below, while not essential for basic functionality, offer a delightful enhancement to the user experience.
+
+## BONUS: Setting Up Touch Interface
 
 To enable touch functionality on your mirror:
 
@@ -198,7 +202,7 @@ If your touch screen requires calibration:
    sudo reboot
    ```
 
-## Setting Up Voice Control with Alexa
+## BONUS: Setting Up Voice Control with Alexa
 
 To integrate Alexa voice capabilities with your smart mirror:
 
