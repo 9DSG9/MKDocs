@@ -99,7 +99,7 @@ MagicMirror² has a thriving community with hundreds of additional modules avail
 1. **Browse** the [MagicMirror Module Wiki](https://github.com/MichMich/MagicMirror/wiki/3rd-Party-Modules)
 2. **Search** for modules that match your needs
 
-### Installing a Spotify Module Example
+### Installing a Spotify Module
 
 1. **Clone** the module repository:
    ```
