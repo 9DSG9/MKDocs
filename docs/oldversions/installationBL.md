@@ -85,38 +85,6 @@ If successful, you should see the MagicMirror interface appear on screen.
 
 4. **Press** `Ctrl+Q` to exit the application
 
-## Setting Up Autostart
-
-To make your smart mirror start automatically when the Raspberry Pi boots:
-
-1. **Create** a new autostart script:
-   ```
-   sudo nano /etc/xdg/autostart/magicmirror.desktop
-   ```
-
-2. **Add** the following content:
-   ```
-   [Desktop Entry]
-   Type=Application
-   Name=MagicMirror
-   Exec=bash -c "cd ~/MagicMirror && npm start"
-   X-GNOME-Autostart-enabled=true
-   ```
-
-3. **Save** the file by pressing `Ctrl+O`, then `Enter`
-
-4. **Exit** the editor by pressing `Ctrl+X`
-
-5. **Make** the file executable:
-   ```
-   sudo chmod +x /etc/xdg/autostart/magicmirror.desktop
-   ```
-     
-6. **Restart** your Raspberry Pi to test the autostart configuration:
-   ```
-   sudo reboot
-   ```
-
 ## Conclusion
 
 You have now successfully installed MagicMirror² on your Raspberry Pi and configured it to start automatically at boot. In the next section, we'll configure the basic modules and customize the display layout.
