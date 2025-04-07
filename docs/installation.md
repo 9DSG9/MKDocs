@@ -42,6 +42,7 @@ MagicMirror² requires several dependencies to function properly:
    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
    ```
 
+    ![Raspberry Pi Versions](./images/NVMreload.png)
 3. **Install** Install Node.js v20 
    ```
    nvm install node
